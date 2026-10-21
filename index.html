@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora OpenCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Calculadora Básica</h2>
+        
+        <div class="input-group">
+            <label for="num1">Primer número:</label>
+            <input type="number" id="num1" placeholder="Ej. 10">
+        </div>
+
+        <div class="input-group">
+            <label for="num2">Segundo número:</label>
+            <input type="number" id="num2" placeholder="Ej. 5">
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-sumar" onclick="realizarOperacion('sumar')">Sumar</button>
+            <button class="btn-restar" onclick="realizarOperacion('restar')">Restar</button>
+        </div>
+
+        <div class="result-container">
+            Resultado: <span id="resultado">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
